@@ -49,9 +49,9 @@ body {
 }
 
 #skip-button {
-  background: transparent;
+  background: #00bcd4;
   border: 1px dashed #aaa;
-  color: #aaa;
+  color: white;
 }
 
 .messages {
