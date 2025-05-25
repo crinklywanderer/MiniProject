@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI Cancer Assistant</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Medical Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="chat-container">
-    <h2>AI Cancer Assistant</h2>
+  <div class="container">
+    <button id="toggle-theme" class="theme-toggle">🌙 Dark Mode</button>
+    <!-- User Info Form -->
+    <form id="user-form" class="form-box">
+      <h2>Welcome to the AI-Powered Medical Assistant</h2>
+      <label for="user-name">Name:</label>
+      <input type="text" id="user-name" placeholder="Enter your name" />
 
-    <!-- Optional User Info Form -->
-    <form id="user-form">
-      <input type="text" id="user-name" placeholder="Your Name (optional)" />
-      <select id="user-age">
-        <option value="">Select Age Range (optional)</option>
-        <option value="under_18">Under 18</option>
-        <option value="18_25">18–25</option>
-        <option value="26_35">26–35</option>
-        <option value="36_50">36–50</option>
-        <option value="above_50">Above 50</option>
-      </select>
-      <div class="form-buttons">
-        <button type="submit">Continue</button>
+      <label for="user-age">Age:</label>
+      <input type="number" id="user-age" placeholder="Enter your age" />
+
+      <div class="button-group">
+        <button type="submit">Start Chat</button>
         <button type="button" id="skip-button">Skip</button>
       </div>
     </form>
 
-    <!-- Hidden chat UI until form is handled -->
+    <!-- Chat UI -->
     <div id="chat-ui" style="display: none;">
-      <div id="chat-box" class="messages"></div>
-      <div class="input-container">
-        <input type="text" id="user-input" placeholder="Ask me something..." />
+      <div id="chat-box" class="chat-box"></div>
+
+      <div id="input-area" class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." />
         <button onclick="sendMessage()">Send</button>
       </div>
     </div>
+
   </div>
 
   <script src="main.js"></script>
