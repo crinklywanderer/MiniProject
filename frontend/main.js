@@ -1,7 +1,7 @@
 // Global user info object
 let userInfo = { name: "", age: "" };
 
-// Show welcome message on page load
+// Show a welcome message on a page load
 document.addEventListener("DOMContentLoaded", function () {
   appendMessage("Assistant: Welcome to the AI Cancer Assistant! How can I help you today?", "bot");
 });
@@ -70,3 +70,11 @@ function appendMessage(text, type) {
 
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+// Theme Toggle
+const toggleButton = document.getElementById('toggle-theme');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+});

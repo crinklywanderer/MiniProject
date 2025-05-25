@@ -1,106 +1,212 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page Layout */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #10151f;
-  color: white;
+  background-color: #f5f8fa;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 40px 20px;
+  align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.chat-container {
+.container {
   width: 100%;
   max-width: 500px;
-  background: #1e2a38;
+  padding: 20px;
+}
+
+/* Form Styling */
+.form-box {
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-#user-form {
-  margin-bottom: 20px;
+.form-box h2 {
+  margin-bottom: 15px;
+  color: #333;
 }
 
-#user-form input,
-#user-form select {
+.form-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.form-box input {
   width: 100%;
-  margin-bottom: 10px;
   padding: 10px;
-  border: none;
-  border-radius: 6px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-.form-buttons {
+.button-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
-.form-buttons button {
-  width: 48%;
-  padding: 10px;
+.button-group button {
+  padding: 10px 16px;
   border: none;
-  border-radius: 6px;
-  background: #00bcd4;
+  border-radius: 8px;
+  background-color: #007bff;
   color: white;
-  font-weight: bold;
   cursor: pointer;
 }
 
-#skip-button {
-  background: #00bcd4;
-  border: 1px dashed #aaa;
-  color: white;
+.button-group button#skip-button {
+  background-color: #6c757d;
 }
 
-.messages {
-  max-height: 400px;
+.button-group button:hover {
+  opacity: 0.9;
+}
+
+/* Chat UI */
+.chat-box {
+  background-color: #ffffff;
+  height: 400px;
   overflow-y: auto;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #27394e;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
 .chat-turn {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .message {
-  padding: 10px;
-  border-radius: 8px;
-  max-width: 90%;
-}
-
-.message.user {
-  background-color: #006064;
-  align-self: flex-end;
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  line-height: 1.5;
+  word-wrap: break-word;
 }
 
 .message.bot {
-  background-color: #37474f;
+  background-color: #f1f1f1;
   align-self: flex-start;
+  color: #000;
 }
 
-.input-container {
+.message.user {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* Input area */
+.input-area {
   display: flex;
   gap: 10px;
 }
 
-.input-container input {
-  flex: 1;
+.input-area input {
+  flex-grow: 1;
   padding: 10px;
-  border-radius: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.input-area button {
+  padding: 10px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  opacity: 0.9;
+}
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .form-box,
+body.dark-mode .chat-box {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+body.dark-mode input,
+body.dark-mode .input-area input {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark-mode select {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .message.bot {
+  background-color: #2e3b4e;
+  color: #e6f0ff;
+}
+
+body.dark-mode .message.user {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+body.dark-mode .input-area button {
+  background-color: #20c997;
+  color: #ffffff;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #ffffff;
+  color: #000000;
   border: none;
 }
 
-.input-container button {
-  padding: 10px 20px;
+body.dark-mode label {
+  color: #dddddd;
+}
+
+body.dark-mode button {
   border: none;
-  background: #00bcd4;
-  color: white;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
+}
+
+body.dark-mode,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode .message {
+  font-weight: 500;
 }
