@@ -1,3 +1,6 @@
+/* frontend/styles.css */
+
+
 /* Basic Reset */
 * {
   box-sizing: border-box;
@@ -17,7 +20,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   padding: 20px;
 }
 

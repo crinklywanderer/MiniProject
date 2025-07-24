@@ -1,0 +1,61 @@
+# AI Medical Chatbot - PowerPoint Presentation Table of Contents
+
+## Slide 1: Title Slide
+- AI Medical Chatbot: An Intelligent Healthcare Assistant
+
+## Slide 2: Project Overview
+- Purpose
+- Target Users
+- Key Features
+
+## Slide 3: Problem Statement
+- Challenges
+- Need
+- Solution
+
+## Slide 4: System Architecture
+- Client-Server Architecture
+- Frontend Components
+- Backend Components
+
+## Slide 5: Technical Implementation
+- Natural Language Processing
+- Matching Algorithm
+- Dataset Integration
+
+## Slide 6: Chatbot Engine Deep Dive
+- TF-IDF Vectorization Process
+- Cosine Similarity Calculation
+- Response Threshold
+
+## Slide 7: Dataset
+- Medical Q&A Structure
+- Dataset Statistics
+- Example Q&A Pairs
+
+## Slide 8: User Interface
+- Design Principles
+- UI Components
+- Responsive Design
+
+## Slide 9: Demo
+- Example Conversations
+- User Flow
+
+## Slide 10: Features
+- Natural Language Understanding
+- Medical Knowledge Base
+- Performance
+- Accessibility
+
+## Slide 11: Future Improvements
+- Enhanced NLP
+- Expanded Knowledge
+- Additional Features
+- Integration
+
+## Slide 12: Conclusion
+- Summary
+- Key Achievements
+- Next Steps
+- Contact Information

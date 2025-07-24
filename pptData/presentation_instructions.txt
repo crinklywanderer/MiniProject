@@ -1,0 +1,96 @@
+# Instructions for Creating the AI Medical Chatbot PowerPoint Presentation
+
+## General Design Guidelines
+1. **Theme and Colors**:
+   - Use a clean, medical-themed template
+   - Suggested color scheme: Blue and white as primary colors (medical/healthcare theme)
+   - Use green for positive elements and red sparingly for important warnings
+   - Keep background light to ensure text readability
+
+2. **Typography**:
+   - Use sans-serif fonts for better readability (Arial, Calibri, or Segoe UI)
+   - Title: 36-44pt
+   - Headings: 28-32pt
+   - Body text: 18-24pt
+   - Keep font consistent throughout the presentation
+
+3. **Layout**:
+   - Use consistent slide layouts
+   - Include slide numbers
+   - Maintain adequate white space
+   - Align elements properly (left-align text, center important elements)
+
+## Creating the Presentation
+
+### Step 1: Set Up the Presentation
+1. Open PowerPoint and select a clean, professional template
+2. Create the title slide with the project name, subtitle, and your name
+3. Set up the slide master to ensure consistency across all slides
+
+### Step 2: Create the Content Slides
+For each slide in the outline:
+1. Create a new slide with an appropriate layout
+2. Add the slide title
+3. Add the content from the presentation_content.txt file
+4. Keep bullet points concise (5-7 words per bullet when possible)
+
+### Step 3: Add Visuals
+1. **Diagrams**:
+   - For Slide 4 (System Architecture): Create a flowchart showing how the components interact
+     * Frontend → HTTP Requests → Backend → Chatbot Engine → Dataset → Response
+   - For Slide 6 (Chatbot Engine): Create a diagram showing the TF-IDF and cosine similarity process
+
+2. **Screenshots**:
+   - For Slide 8 (User Interface): Take screenshots of the application's UI
+     * Full interface screenshot
+     * Close-up of the chat container
+     * Mobile view (if available)
+   - For Slide 9 (Demo): Take screenshots of actual conversations with the chatbot
+
+3. **Code Snippets**:
+   - For Slide 5 or 6: Include a small, readable code snippet from chatbot_engine.py
+     * Focus on the get_answer method or the TF-IDF implementation
+   - Use syntax highlighting and adequate font size
+
+4. **Charts/Graphs**:
+   - For Slide 7 (Dataset): Consider adding a pie chart showing the distribution of medical topics
+   - For Slide 10 (Features): Consider adding a bar chart showing response times or accuracy metrics
+
+### Step 4: Enhance with Animations and Transitions
+1. Use subtle animations to reveal bullet points sequentially
+2. Add simple transitions between slides (avoid flashy transitions)
+3. Ensure animations serve a purpose (revealing information logically)
+
+### Step 5: Review and Refine
+1. Check for consistency in design, fonts, and colors
+2. Ensure all text is readable (project on a screen to test if possible)
+3. Verify that all technical terms are explained appropriately
+4. Add speaker notes for important points to cover during presentation
+
+## Presentation Tips
+
+### Preparation
+1. Practice the presentation multiple times
+2. Prepare for potential questions about the technical implementation
+3. Time your presentation (aim for 15-20 minutes total)
+
+### During Presentation
+1. Start with an engaging introduction about the problem the chatbot solves
+2. Explain technical concepts in simple terms
+3. Demonstrate the chatbot if possible (live demo or video)
+4. Engage the audience with questions or interactive elements
+5. Conclude with a strong summary and next steps
+
+### Slide-Specific Tips
+- **Slide 1 (Title)**: Start with a brief introduction about the importance of accessible medical information
+- **Slide 4 (Architecture)**: Explain the flow of information through the system
+- **Slides 5-6 (Technical)**: Break down complex concepts with analogies
+- **Slide 9 (Demo)**: Consider preparing a short video demo as backup
+- **Slide 12 (Conclusion)**: End with the impact and potential of the project
+
+## Additional Resources
+- Consider creating handouts with key information
+- Prepare a one-page executive summary
+- Have the GitHub repository link ready to share
+
+Remember: The presentation should tell a story about the project, from problem to solution, with a clear flow of information.

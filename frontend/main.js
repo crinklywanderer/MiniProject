@@ -1,9 +1,12 @@
+// frontend/main.js
+
+
 // Global user info object
 let userInfo = { name: "", age: "" };
 
 // Show a welcome message on a page load
 document.addEventListener("DOMContentLoaded", function () {
-  appendMessage("Assistant: Welcome to the AI Cancer Assistant! How can I help you today?", "bot");
+  appendMessage(" ", "bot");
 });
 
 // Handle form submission (user info input)
